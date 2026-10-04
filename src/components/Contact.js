@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaEnvelope, FaPhone, FaLinkedin, FaPaperPlane } from 'react-icons/fa';
+import { FaEnvelope, FaPhone, FaLinkedin, FaGithub, FaPaperPlane } from 'react-icons/fa';
 import './Contact.css';
 
 const Contact = () => {
@@ -40,6 +40,12 @@ const Contact = () => {
       title: 'LinkedIn',
       value: 'linkedin.com/in/alisetty-anusha',
       link: 'https://linkedin.com/in/alisetty-anusha',
+    },
+    {
+      icon: <FaGithub />,
+      title: 'GitHub',
+      value: 'github.com/ALISETTYANUSHA',
+      link: 'https://github.com/ALISETTYANUSHA',
     },
   ];
 

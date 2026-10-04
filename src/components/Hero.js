@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaLinkedin, FaEnvelope, FaPhone } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaPhone } from 'react-icons/fa';
 import { TypeAnimation } from 'react-type-animation';
 import ParticleBackground from './ParticleBackground';
 import './Hero.css';
@@ -98,24 +98,33 @@ const Hero = () => {
             transition={{ delay: 1.2 }}
           >
             <motion.a
-              href="https://linkedin.com/in/alisetty-anusha"
+              href="https://github.com/ALISETTYANUSHA"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.2, rotate: 5 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <FaGithub />
+            </motion.a>
+            <motion.a
+              href="https://linkedin.com/in/alisetty-anusha"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.2, rotate: -5 }}
               whileTap={{ scale: 0.9 }}
             >
               <FaLinkedin />
             </motion.a>
             <motion.a
               href="mailto:alisettyanusha6104@gmail.com"
-              whileHover={{ scale: 1.2, rotate: -5 }}
+              whileHover={{ scale: 1.2, rotate: 5 }}
               whileTap={{ scale: 0.9 }}
             >
               <FaEnvelope />
             </motion.a>
             <motion.a
               href="tel:+917842404102"
-              whileHover={{ scale: 1.2, rotate: 5 }}
+              whileHover={{ scale: 1.2, rotate: -5 }}
               whileTap={{ scale: 0.9 }}
             >
               <FaPhone />
